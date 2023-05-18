@@ -6,14 +6,21 @@
   "scripts": {
     "start": "tsc && node dist/index.js",
     "dev:server": "nodemon src/index.ts",
-    "dev:script": "nodemon src/script.ts"
+    "dev:script": "nodemon src/script.ts",
+    "test": "jest"
   },
   "author": "vijit",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-typescript": "^7.21.5",
     "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.1",
     "@types/node": "^20.1.4",
+    "babel-jest": "^29.5.0",
     "eslint": "^8.40.0",
+    "jest": "^29.5.0",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1"
   },
