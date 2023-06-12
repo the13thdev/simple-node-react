@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   console.log('query params: ' + JSON.stringify(req.query));
-  res.send('Hello World!');
+  res.json({ queryParams: req.query });
 });
 
 app.listen(port, () => {
