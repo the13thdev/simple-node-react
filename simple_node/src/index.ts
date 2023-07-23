@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-  console.log('post data: ' + JSON.stringify(req.query));
+  console.log('post data: ' + JSON.stringify(req.body));
   res.send({ postData: req.body });
 });
 
