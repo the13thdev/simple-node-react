@@ -12,6 +12,11 @@ app.get('/', (req, res) => {
   res.json({ queryParams: req.query });
 });
 
+app.post('/', (req, res) => {
+  console.log('post data: ' + JSON.stringify(req.query));
+  res.send({ postData: req.body });
+});
+
 app.listen(port, () => {
   return console.log(`Express is listening at http://localhost:${port}`);
 });
