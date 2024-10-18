@@ -107,7 +107,31 @@
         } else {
           outputDiv.textContent = 'Please enter a valid number greater than 0.';
         }
+
+        // Step 1
+        reportUsage({ usageCount: numberInput });
       }
+
+      //   async function reportUsage({ usageCount }) {
+      //     try {
+      //       const response = await fetch('http://localhost:3000/reportUsage', {
+      //         method: 'POST',
+      //         headers: {
+      //           'Content-Type': 'application/json',
+      //         },
+      //         body: JSON.stringify({ usageCount }),
+      //       });
+
+      //       if (!response.ok) {
+      //         throw new Error('Network response was not ok');
+      //       }
+
+      //       const result = await response.json();
+      //       console.log('Successfully reported usage:', result);
+      //     } catch (error) {
+      //       console.error('Error reporting usage:', error);
+      //     }
+      //   }
     </script>
   </body>
 </html>
